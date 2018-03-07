@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+#main {background: url(../images/bg_main.jpg) center no-repeat;background-size: cover;}
+
+#main>.fp-tableCell {background-color: rgba(255, 255, 255, 0.7);}
+
+/* 메뉴 */
+
+.myHeader {position:fixed; top:0; left:0; width:100%; z-index:9000;}
+
+#myMenu_wrap {max-width: 1200px; margin: 0 auto;}
+
+#myMenu>li {float:left; width:25%;}
+
+#myMenu>li>a {display: block; line-height: 40px; text-align: center;}
+
+#myMenu>li>a:link, #myMenu>li>a:visited {font-size: 1.2em;}
+
+/* 메뉴에 마우스 올렸을 때, 포커스 얻었을 때, a에 클래스 on 있을때 디자인 설정 */
+#myMenu>li>a:hover, #myMenu>li>a:focus {font-weight: bold;}
+
+#myMenu>li>a.on {font-weight: bold; border-bottom: 2px solid #2c3c4a;}
+
+/* MAIN */
+
+#main>div>h1 {font-size: 4em; text-align: center; margin-bottom: 50px;}
+
+#main>div>p {font-size: 2em; text-align: center; color: #7c8e9d;}
+
+/* ABOUT ME */
+/* 막대그래프 */
+.skills_wrap>p {text-align: center; margin-bottom: 40px;}
+
+.graph {width: 635px; margin: 0 auto;}
+
+.bar_wrap {position: relative; padding-bottom: 30px;}
+
+.bar_wrap:after {content: ''; display: block; clear: both;}
+
+.bar_wrap>p {position: absolute; top: -10px; left: 0;}
+
+.bar_wrap>div {margin: 0 60px 0 75px; border-radius: 15px; background: #e4edff;}
+
+.bar_wrap>div>div.bar {height: 20px; border-radius: 15px; width: 5%;}
+
+.bar1 {background: #f69fa9;}
+
+.bar2 {background: #90c884;}
+
+.bar3 {background: #ecbd46;}
+
+.bar4 {background: #56849b;}
+
+.bar5 {background: #8ed7f7;}
+
+.bar6 {background: #f8b46e;}
+
+.bar_wrap>span {position: absolute; top: 0; right:0;}
+
+/* 자격사항 */
+
+.my_info {width: 850px; margin: 0 auto; border-top:1px solid #2c3c4a;}
+
+.my_info>div {float: left; width: 33.3333%; text-align: center;}
+
+.my_info>div>p{background-position: center 30%; background-repeat: no-repeat; padding-top:55px;}
+
+.certificate>p {background:url(../images/ico_certificate.png);}
+
+.tools>p {background:url(../images/ico_tools.png);}
+
+.experience>p {background:url(../images/ico_experience.png);}
