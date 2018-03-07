@@ -31,7 +31,7 @@
             <p>Web publishing / Web design</p>
         </div>
         <div id="about_me" class="section">
-            <h1>About Me</h1>
+            <h1 class="blind">About Me</h1>
             <div class="skills_wrap">
                 <p>Skills</p>
                 <div class="graph">
@@ -82,24 +82,122 @@
             <div class="my_info clearfix">
                 <div class="certificate">
                     <p>certificate</p>
+                    <ul>
+                        <li>GTQ 1급</li>
+                        <li>사무자동화 산업기사</li>
+                        <li>웹디자인기능사 필기(실기예정)</li>
+                        <li>한국사능력검정 1급</li>
+                        <li>한자실력급수 2급</li>
+                        <li>전산회계 1급, 전산세무 2급</li>
+                        <li>FAT 1급, TAT 2급</li>
+                    </ul>
                 </div>
                 <div class="tools">
                     <p>tools</p>
+                    <ul>
+                        <li>카페24쇼핑몰 솔루션</li>
+                        <li>그누보드5</li>
+                        <li>Git</li>
+                        <li>워드프레스</li>
+                    </ul>
                 </div>
                 <div class="experience">
                     <p>experience</p>
+                    <ul>
+                        <li>16' 7 ~ 17' 8 xxx세무회계 기장팀</li>
+                        <li>17' 10 ~ 18' 3 서울현대직업전문학교<br>반응형웹디자인 과정</li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div id="projects" class="section">
-            <!--<h1>Projects</h1>-->
-            <div class="slide"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
-            <div class="slide"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
-            <div class="slide"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
-            <div class="slide"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+            <h1 class="blind">Projects</h1>
+            <div class="slide">
+                <div class="imgbox">
+                    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                </div>
+                <div class="textbox"></div>
+            </div>
+            <div class="slide">
+                <div class="imgbox">
+                    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                </div>
+                <div class="textbox"></div>
+            </div>
+            <div class="slide">
+                <div class="imgbox">
+                    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                </div>
+                <div class="textbox"></div>
+            </div>
+            <div class="slide">
+                <div class="imgbox">
+                    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                </div>
+                <div class="textbox"></div>
+            </div>
         </div>
         <div id="contact" class="section">
-            <h1>Contact</h1>
+            <h1 class="blind">Contact</h1>
+            <div class="contact_wrap">
+                <form name="contactform" method="post" action="send_email.php">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="td_label">
+                                    <label for="first_name">이름 <span class="required">*</span></label>
+                                </td>
+                                <td class="td_box">
+                                    <input type="text" id="first_name" placeholder="Name" name="first_name" maxlength="50">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td_label">
+                                    <label for="email">이메일 <span class="required">*</span></label>
+                                </td>
+                                <td class="td_box">
+                                    <input type="text" id="email" placeholder="E-mail" name="email" maxlength="80">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td_label">
+                                    <label for="telephone">연락처</label>
+                                </td>
+                                <td class="td_box">
+                                    <input type="text" id="telephone" placeholder="Phone( - 생략)" name="telephone" maxlength="30">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td_label align_top">
+                                    <label for="comments">문의사항 <span class="required">*</span></label>
+                                </td>
+                                <td class="td_box">
+                                    <textarea placeholder="2000자 이내로 작성해 주세요." name="comments" id="comments" maxlength="2000"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td_label align_top">개인정보 수집</td>
+                                <td class="td_box">
+                                    <div class="info_agree">
+                                        ▶ 개인정보의 수집 및 이용목적 - 서비스 이용에 따른 본인식별, 실명확인, 가입의사 확인, 연령제한 서비스 이용 - 고지사항 전달, 불만처리 의사소통 경로 확보, 물품배송 시 정확한 배송지 정보 확보 - 신규 서비스 등 최신정보 안내 및 개인맞춤서비스 제공을 위한 자료 - 기타 원활한 양질의 서비스 제공 등 ▶ 수집하는 개인정보의 항목 - 이름, 이메일, 연락처, 핸드폰번호, 그 외 선택항목 ▶ 개인정보의 보유 및 이용기간 - 원칙적으로 개인정보의 수집 또는 제공받은 목적 달성 시 지체 없이 파기합니다. - 다만, 원활한 서비스의 상담을 위해 상담 완료 후 내용을 3개월간 보유할 수 있으며, 전자상거래에서의 소비자보호에 관한 법률 등 타법률에 의해 보존할 필요가 있는 경우에는 일정기간 보존합니다.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="agree">
+                                    <input type="checkbox" id="agree_check" name="agree" value="agree">
+                                    <label for="agree_check">개인정보 수집 및 이용에 동의합니다.</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="send">
+                                    <input type="submit" value="SEND">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
         </div>
     </div>
 </body>
