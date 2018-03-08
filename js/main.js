@@ -47,6 +47,7 @@ $(function () {
                     clearInterval(t1);
                 };
             }; //막대그래프 종료
-        } //afterLoad END
+        }, //afterLoad END
+        slidesNavigation: true
     }); //FULLPAGE PLUG-IN 종료
 }); //전체함수 종료
