@@ -5,7 +5,7 @@ $(function () {
         anchors: ["p1", "p2", "p3", "p4"],
         menu: "#myMenu",
         afterLoad: function (anchorLink, index) {
-            //메인메뉴
+            // 메인메뉴
             $("#myMenu>li>a").removeClass("on");
             if (index == 1) {
                 $("#myMenu>li:eq(0)>a").addClass("on");
@@ -18,10 +18,10 @@ $(function () {
             };
             $("#myMenu>li>a").click(function () {
                 $(this).blur();
-            }); //메인메뉴 종료
+            }); // 메인메뉴 종료
 
-            //막대그래프 시작
-            //fullpage는 scroll을 이용한 것이 아니기 때문에 section의 index값으로 설정해야한다.
+            // 막대그래프 시작
+            // fullpage는 scroll을 이용한 것이 아니기 때문에 section의 index값으로 설정해야한다.
             if (index == 2) {
                 t1 = setInterval(changeT, 50);
             };
@@ -45,9 +45,58 @@ $(function () {
                     });
                 } else {
                     clearInterval(t1);
-                };
-            }; //막대그래프 종료
-        }, //afterLoad END
-        slidesNavigation: true
+                }; // else 종료
+            }; // 막대그래프 종료
+        }, // afterLoad END
+        slidesNavigation: true,
+
+
+
+
+
+
+
+
+        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+
+            if (slideIndex == 1) {
+                $(".imgbox").children().eq(0).animate({
+                    "top": "20%",
+                    "opacity": "1"
+                }, 500);
+                $(".imgbox").children().eq(1).animate({
+                    "left": "30%",
+                    "opacity": "1"
+                }, 500);
+                $(".imgbox").children().eq(2).animate({
+                    "top": "53%",
+                    "opacity": "1"
+                }, 500);
+            };
+            if (slideIndex == 2) {
+                $(".imgbox").children().eq(0).animate({
+                    "top": "20%",
+                    "opacity": "1"
+                }, 500);
+                $(".imgbox").children().eq(1).animate({
+                    "left": "30%",
+                    "opacity": "1"
+                }, 500);
+                $(".imgbox").children().eq(2).animate({
+                    "top": "53%",
+                    "opacity": "1"
+                }, 500);
+            };
+
+        }
+
+
+
+
+
+
+
+
+
     }); //FULLPAGE PLUG-IN 종료
 }); //전체함수 종료
