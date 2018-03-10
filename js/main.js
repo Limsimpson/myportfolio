@@ -48,55 +48,56 @@ $(function () {
                 }; // else 종료
             }; // 막대그래프 종료
         }, // afterLoad END
-        slidesNavigation: true,
+        slidesNavigation: true
+    }); // FULLPAGE PLUG-IN 종료
 
 
+    // 프로젝트 배너 시작
+    var bUl = $(".banner>ul>li");
+    var n;
+    var ne;
+    //bUl.stop().hide();
+    bUl.eq(0).find("img:eq(0)").addClass("act0");
+    bUl.eq(0).find("img:eq(1)").addClass("act1");
+    bUl.eq(0).find("img:eq(2)").addClass("act2");
 
+    function poS(n) {
+        bUl.eq(n).siblings().stop().fadeOut(500);
+        bUl.eq(n).siblings().find("img:eq(0)").removeClass("act0");
+        bUl.eq(n).siblings().find("img:eq(1)").removeClass("act1");
+        bUl.eq(n).siblings().find("img:eq(2)").removeClass("act2");
+        bUl.eq(n).stop().fadeIn(1500);
+        bUl.eq(n).find("img:eq(0)").addClass("act0");
+        bUl.eq(n).find("img:eq(1)").addClass("act1");
+        bUl.eq(n).find("img:eq(2)").addClass("act2");
+    };
+    btnN();
+    btnP();
+    ne = 0;
 
+    function btnN() {
+        $(".next").click(function () {
+            ne++;
+            if (ne < 4) {
+                poS(ne);
+            } else {
+                ne = 0;
+                poS(ne);
+            }
+            return false;
+        });
+    };
 
-
-
-
-        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-
-            if (slideIndex == 1) {
-                $(".imgbox").children().eq(0).animate({
-                    "top": "20%",
-                    "opacity": "1"
-                }, 500);
-                $(".imgbox").children().eq(1).animate({
-                    "left": "30%",
-                    "opacity": "1"
-                }, 500);
-                $(".imgbox").children().eq(2).animate({
-                    "top": "53%",
-                    "opacity": "1"
-                }, 500);
-            };
-            if (slideIndex == 2) {
-                $(".imgbox").children().eq(0).animate({
-                    "top": "20%",
-                    "opacity": "1"
-                }, 500);
-                $(".imgbox").children().eq(1).animate({
-                    "left": "30%",
-                    "opacity": "1"
-                }, 500);
-                $(".imgbox").children().eq(2).animate({
-                    "top": "53%",
-                    "opacity": "1"
-                }, 500);
-            };
-
-        }
-
-
-
-
-
-
-
-
-
-    }); //FULLPAGE PLUG-IN 종료
-}); //전체함수 종료
+    function btnP() {
+        $(".prev").click(function () {
+            ne--;
+            if (ne < 4 && ne >= 0) {
+                poS(ne);
+            } else {
+                ne = 3;
+                poS(ne);
+            }
+            return false;
+        });
+    }; // 프로젝트 배너 종료
+}); // 전체함수 종료
