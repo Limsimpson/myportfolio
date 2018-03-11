@@ -62,7 +62,7 @@ $(function () {
     bUl.eq(0).find("img:eq(2)").addClass("act2");
 
     function poS(n) {
-        bUl.eq(n).siblings().stop().fadeOut(500);
+        bUl.eq(n).siblings().stop().fadeOut();
         bUl.eq(n).siblings().find("img:eq(0)").removeClass("act0");
         bUl.eq(n).siblings().find("img:eq(1)").removeClass("act1");
         bUl.eq(n).siblings().find("img:eq(2)").removeClass("act2");

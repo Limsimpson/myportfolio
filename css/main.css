@@ -78,13 +78,15 @@
 
 /* 프로젝트 */
 
+#projects {background-color: antiquewhite;}
+
 .banner {position: relative; height: 80%;}
 
-.banner li {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.banner>ul>li {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 
-.banner .first {display: block;}
+.banner>ul>.first {display: block;}
 
-.banner li>div {float:left;}
+.banner>ul>li>div {float:left;}
 
 .imgbox {position: relative; width: 50%; height:100%; padding-right: 2.5%; border-right: 1px solid #2c3c4a; box-sizing: border-box;}
 
@@ -92,11 +94,11 @@
 
 .imgbox>img {position: absolute; height: auto;}
 
-.imgbox>img:nth-child(1) {top: 15%; left: 45%; transition: 1.5s;}
+.imgbox>img:nth-child(1) {top: 15%; left: 45%; transition: 1s;}
 
-.imgbox>img:nth-child(2) {top: 38%; left: 28%; transition: 1.5s;}
+.imgbox>img:nth-child(2) {top: 38%; left: 28%; transition: 1s;}
 
-.imgbox>img:nth-child(3) {top: 55%; left: 48%; transition: 1.5s;}
+.imgbox>img:nth-child(3) {top: 55%; left: 48%; transition: 1s;}
 
 .imgbox>img.act0 {top: 20%; left: 45%;}
 
@@ -104,9 +106,45 @@
 
 .imgbox>img.act2 {top:50%; left:48%;}
 
+.textbox {padding:3% 2%; box-sizing: border-box;}
+
+.textbox>strong {font-size: 1.2em; line-height: 1.5;}
+
 .textbox>p {padding-right: 30%; margin-bottom: 23px; margin-top: 13px;}
 
 .textbox>p:nth-child(4) {padding-right: 20%;}
+
+.textbox>ul {margin-top: 50px;}
+
+.textbox>ul>li {float: left; width: 50px; height: 50px; border-radius: 50px; text-indent: -9999em;}
+
+.hanwha>ul>li:first-child {background: #f37322;}
+
+.hanwha>ul>li:nth-child(2) {background: #fef4ed;}
+
+.hanwha>ul>li:last-child {background: #8a8a8a;}
+
+.kepco>ul>li:first-child {background: #034ea2;}
+
+.kepco>ul>li:nth-child(2) {background: #ed1c24;}
+
+.kepco>ul>li:last-child {background: #222;}
+
+.panther>ul>li:first-child {background: #e9a41a;}
+
+.panther>ul>li:nth-child(2) {background: blue;}
+
+.panther>ul>li:last-child {background: #8a8a8a;}
+
+.evezary>ul>li:first-child {background: #b8e965;}
+
+.evezary>ul>li:nth-child(2) {background: #959595;}
+
+.evezary>ul>li:last-child {background: #8a8a8a;}
+
+.textbox>button {margin-top: 50px; margin-right: 5px; width: 130px; height: 35px; background:#fff; color: #2c3c4a; border: 0 none;}
+
+.textbox>button:hover {background: #2c3c4a; color: #fff; border: 1px solid #333;}
 
 .btn {position: absolute; top: 50%; margin-top: -32px; width: 64px; height: 64px; text-indent: -9999em; background-repeat: no-repeat;}
 
@@ -114,12 +152,11 @@
 
 .next {right: 5%; background-image: url(../images/btn_right.png);}
 
-
 /* 연락처 */
 
-#contact{background-color:#eaf4ff;}
+#contact {background-color: #eaf4ff;}
 
-.contact_wrap {width: 500px; margin:0 auto; padding:20px; border-radius:15px; background:rgba(44, 60, 74, 0.5); box-shadow: 5px 5px 5px rgba(0,0,0,0.05), -5px 5px 5px rgba(0,0,0,0.05), 0px 5px 5px rgba(0,0,0,0.05);}
+.contact_wrap {width: 500px; margin: 0 auto; padding: 20px; border-radius: 15px; background: rgba(44, 60, 74, 0.5); box-shadow: 5px 5px 5px rgba(0,0,0,0.05), -5px 5px 5px rgba(0,0,0,0.05), 0px 5px 5px rgba(0,0,0,0.05);}
 
 .contact_wrap table {width: 100%; color: #555; font-size: 1em; color:#fff;}
 
@@ -133,7 +170,7 @@
 
 .td_box input {box-sizing: border-box; height: 35px; width: 100%;}
 
-.td_box textarea {box-sizing:border-box; width:100%; height:150px; margin:5px 0; text-align:left; border:1px solid #ccc; color:#666;}
+.td_box textarea {box-sizing: border-box; width: 100%; height: 150px; margin: 5px 0; text-align: left; border: 1px solid #ccc; color: #666;}
 
 .info_agree {overflow: auto; box-sizing: border-box; width: 100%; height: 100px; padding: 10px; margin: 5px 0; border: 1px solid #ccc;}
 
