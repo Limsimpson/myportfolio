@@ -2696,11 +2696,11 @@
             }
 
             //all directions?
-            else{
-                $.each(Object.keys(isScrollAllowed[type]), function(index, key){
-                    isScrollAllowed[type][key] = value;
-                });
-            }
+//            else{
+//                $.each(Object.keys(isScrollAllowed[type]), function(index, key){
+//                    isScrollAllowed[type][key] = value;
+//                });
+//            }
         }
 
         /*

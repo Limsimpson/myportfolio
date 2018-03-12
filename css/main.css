@@ -156,7 +156,7 @@
 
 #contact {background-color: #eaf4ff;}
 
-.contact_wrap {width: 500px; margin: 0 auto; padding: 20px; border-radius: 15px; background: rgba(44, 60, 74, 0.5); box-shadow: 5px 5px 5px rgba(0,0,0,0.05), -5px 5px 5px rgba(0,0,0,0.05), 0px 5px 5px rgba(0,0,0,0.05);}
+.contact_wrap {width: 500px; margin: 0 auto; padding: 20px; border-radius: 15px; background-color: rgb(44, 60, 74); background-color: rgba(44, 60, 74, 0.5); box-shadow: 5px 5px 5px rgba(0,0,0,0.05), -5px 5px 5px rgba(0,0,0,0.05), 0px 5px 5px rgba(0,0,0,0.05);}
 
 .contact_wrap table {width: 100%; color: #555; font-size: 1em; color:#fff;}
 
