@@ -78,7 +78,7 @@
 
 /* 프로젝트 */
 
-#projects {background-color: antiquewhite;}
+#projects {background-color: #c7d0c4;}
 
 .banner {position: relative; height: 80%;}
 
@@ -94,7 +94,7 @@
 
 .imgbox>img {position: absolute; height: auto;}
 
-.imgbox>img:nth-child(1) {top: 15%; left: 45%; transition: 1s;}
+.imgbox>img:nth-child(1) {top: 15%; left: 45%; transition: 1s; width: 410px; height: 333px;}
 
 .imgbox>img:nth-child(2) {top: 38%; left: 28%; transition: 1s;}
 
@@ -114,39 +114,41 @@
 
 .textbox>p:nth-child(4) {padding-right: 20%;}
 
-.textbox>ul {margin-top: 50px;}
+.color {margin-top: 50px;}
 
-.textbox>ul>li {float: left; width: 50px; height: 50px; border-radius: 50px; text-indent: -9999em;}
+.color>li {float: left; width: 50px; height: 50px; margin-right: 5px; border-radius: 50px; text-indent: -9999em;}
 
-.hanwha>ul>li:first-child {background: #f37322;}
+.hanwha>.color>li:first-child {background: #f37322;}
 
-.hanwha>ul>li:nth-child(2) {background: #fef4ed;}
+.hanwha>.color>li:nth-child(2) {background: #fef4ed;}
 
-.hanwha>ul>li:last-child {background: #8a8a8a;}
+.hanwha>.color>li:last-child {background: #8a8a8a;}
 
-.kepco>ul>li:first-child {background: #034ea2;}
+.kepco>.color>li:first-child {background: #034ea2;}
 
-.kepco>ul>li:nth-child(2) {background: #ed1c24;}
+.kepco>.color>li:nth-child(2) {background: #ed1c24;}
 
-.kepco>ul>li:last-child {background: #222;}
+.kepco>.color>li:last-child {background: #222;}
 
-.panther>ul>li:first-child {background: #e9a41a;}
+.panther>.color>li:first-child {background: #e9a41a;}
 
-.panther>ul>li:nth-child(2) {background: blue;}
+.panther>.color>li:nth-child(2) {background: blue;}
 
-.panther>ul>li:last-child {background: #8a8a8a;}
+.panther>.color>li:last-child {background: #8a8a8a;}
 
-.evezary>ul>li:first-child {background: #b8e965;}
+.evezary>.color>li:first-child {background: #b8e965;}
 
-.evezary>ul>li:nth-child(2) {background: #959595;}
+.evezary>.color>li:nth-child(2) {background: #959595;}
 
-.evezary>ul>li:last-child {background: #8a8a8a;}
+.evezary>.color>li:last-child {background: #8a8a8a;}
 
-.textbox>button {margin-top: 50px; margin-right: 5px; width: 130px; height: 35px; background:#fff; color: #2c3c4a; border: 0 none;}
+.btn>li {float: left; width: 130px; margin-top: 50px; margin-right: 5px; background: #fff; color: #2c3c4a;}
 
-.textbox>button:hover {background: #2c3c4a; color: #fff; border: 1px solid #333;}
+.btn>li>a {display: block; text-align: center; line-height: 35px;}
 
-.btn {position: absolute; top: 50%; margin-top: -32px; width: 64px; height: 64px; text-indent: -9999em; background-repeat: no-repeat;}
+.btn>li>a:hover {color: #fff; border: 1px solid #333; background: #2c3c4a;}
+
+.arrow {position: absolute; top: 50%; margin-top: -32px; width: 64px; height: 64px; text-indent: -9999em; background-repeat: no-repeat;}
 
 .prev {left: 5%; background-image: url(../images/btn_left.png);}
 
