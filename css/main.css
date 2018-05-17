@@ -94,11 +94,11 @@
 
 .imgbox>img {position: absolute; height: auto;}
 
-.imgbox>img:nth-child(1) {top: 15%; left: 45%; transition: 1s; width: 410px; height: 333px;}
+.imgbox>img:nth-child(1) {top: 15%; left: 45%; transition: 2s; width: 410px; height: 333px;}
 
-.imgbox>img:nth-child(2) {top: 38%; left: 28%; transition: 1s;}
+.imgbox>img:nth-child(2) {top: 38%; left: 28%; transition: 2s;}
 
-.imgbox>img:nth-child(3) {top: 55%; left: 48%; transition: 1s;}
+.imgbox>img:nth-child(3) {top: 55%; left: 48%; transition: 2s;}
 
 .imgbox>img.act0 {top: 20%; left: 45%;}
 
@@ -117,6 +117,14 @@
 .color {margin-top: 50px;}
 
 .color>li {float: left; width: 50px; height: 50px; margin-right: 5px; border-radius: 50px; text-indent: -9999em;}
+
+.coindata>.color>li:first-child {background: #183152;}
+
+.coindata>.color>li:nth-child(2) {background: #fff;}
+
+.coindata>.color>li:nth-child(3) {background: #0055b1;}
+
+.coindata>.color>li:last-child {background: #bd0202;}
 
 .hanwha>.color>li:first-child {background: #f37322;}
 

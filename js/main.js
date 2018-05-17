@@ -78,7 +78,7 @@ $(function () {
     function btnN() {
         $(".next").click(function () {
             ne++;
-            if (ne < 4) {
+            if (ne < 5) {
                 poS(ne);
             } else {
                 ne = 0;
@@ -91,10 +91,10 @@ $(function () {
     function btnP() {
         $(".prev").click(function () {
             ne--;
-            if (ne < 4 && ne >= 0) {
+            if (ne < 5 && ne >= 0) {
                 poS(ne);
             } else {
-                ne = 3;
+                ne = 4;
                 poS(ne);
             }
             return false;
