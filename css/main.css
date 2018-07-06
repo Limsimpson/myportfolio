@@ -126,6 +126,14 @@
 
 .coindata>.color>li:last-child {background: #bd0202;}
 
+.weatherinfo>.color>li:first-child {background: #7bcdfd;}
+
+.weatherinfo>.color>li:nth-child(2) {background: #bef085;}
+
+.weatherinfo>.color>li:nth-child(3) {background: #d8b169;}
+
+.weatherinfo>.color>li:last-child {background: #cc6969;}
+
 .hanwha>.color>li:first-child {background: #f37322;}
 
 .hanwha>.color>li:nth-child(2) {background: #fef4ed;}
